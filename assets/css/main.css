@@ -1,0 +1,217 @@
+.header{
+    height: 120px;
+    background-image: linear-gradient(0, #fe6433, #f53e2d) ;
+}
+
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar-list{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 4px;
+}
+
+.header__navbar-item{
+    margin: 0 8px;
+    position: relative;
+    min-height: 26px; 
+
+}
+
+
+.header__navbar-item,
+.header__navbar-item-link{ 
+    display: inline-block;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.header__navbar-item,
+.header__navbar-item-link,
+.header__navbar-icon-link{ 
+    display: inline-flex;
+    align-items: center;    
+
+}
+.header__navbar-item:hover,
+.header__navbar-icon:hover,
+.header__navbar-item-link:hover{
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+.header__navbar-item--strong{
+
+    font-weight: 600;
+}
+
+.header__navbar-item--seperate::after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-left: 1px solid  #fb9066;
+    height: 12px;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header__navbar-icon-link{
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+
+.header__navbar-icon{
+    font-size: 1.8rem;
+    margin:0 4px;
+}
+
+.navbar__item--tittle-nopointer:hover{
+    cursor: text !important;
+    color: var(--white-color) !important;
+}
+
+/* this is for the show up qr code*/
+
+.show_store{
+    width: 180px;
+    background-color: var(--white-color);
+    padding: 8px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 118%;
+    animation: FadeIn 0.5s ;
+}
+.show_store_active:hover .show_store{
+    display: block;
+}
+.qrcode img{
+    width: 100%;
+}
+
+.link_store{
+    display: flex;
+    justify-content: space-between;
+}
+
+.linkStore_img img{
+    height: 14px;
+}
+
+.linkStore_img:first-child{
+    margin-left: 10px;
+}
+
+.linkStore_img:last-child{
+    margin-right: 11px;
+}
+
+.show_store_active::before{
+    color: red;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 100%;
+    left: 0;
+    z-index: 15;
+    display: block;
+}
+
+
+/*end ne*/
+
+/* Thong bao hien len */
+.show_noti{
+    border-radius: 2px;
+    width: 404px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    top: 118%;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    box-shadow: 5px 5px 15px 5px #888888;
+    display: none;
+}
+
+.show_notification_class:hover .show_noti{
+    display: block;
+
+}
+
+.show_notification_class::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    height: 30px;
+    color: #000;
+}
+
+
+.notification_header{
+    height: 38px;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.notification_header p{
+    line-height: 38px;
+    padding-left: 12px;
+}
+
+.show_notification{
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.noti_tile{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    padding: 12px 12px;
+}
+.noti_tile:hover{
+    background-color: #ebebeb;
+}
+
+.notifi_img img{
+    width: 48px;
+    margin-right: 8px;
+}
+
+.notifi__content{
+
+}
+
+.title{
+    font-size: 1.4rem;
+    font-weight: 500;
+
+}
+
+.subTitle{
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.6;
+    line-height: 15px;
+}
+
+.notifi_footer{
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
