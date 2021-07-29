@@ -374,3 +374,144 @@
     right: -6px;
     transform: translateY(-50%);
 }
+
+
+
+/* Phần tìm kiếm sản phẩm + logo bla bla*/
+.header__searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+.shopee-svg-icon{
+    height: 70px;
+    fill: #fff;
+    padding: 10px 50px;
+}
+
+.searchbar__searchbox{
+    border-radius: 3px;
+    flex-grow: 1;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+    display: flex;
+}
+
+.searchbox__input{
+    color: #222;
+    font-size: 1.35rem;
+    font-weight: 400;
+    flex-grow: 1;
+    height: 38px;
+    margin: 0;
+    border: none;
+    outline: none;
+    padding: 5px 16px;
+}
+.searchbar__cart{
+    color: white;
+    padding: 10px 110px 10px 60px;
+    font-size: 1.6rem;
+}
+.searchbar__cart:hover{
+    cursor: pointer;
+
+}
+
+.searchbar__searchbutton{
+    width: 60px;
+    height: 34px;
+    text-align: center;
+    background-color: #ee4d2d;
+    color: white;
+    font-size: 1.3rem;
+    padding-top: 8px;
+    margin-right: 4px;
+    border-radius: 3px;
+}
+
+.searchbar__searchbutton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.searchbar__category{
+    padding: 0px 12px;
+    position: relative;
+}
+
+.searchbar__category::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 20px;
+    width: 0;
+    border:0.5px solid #ccc ;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.category-active{
+    margin-right: 4px;
+
+}
+.searchbar__category::before{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 140px;
+    left: 0;
+    top: 100%;
+    animation: fadeIn 0.5s;
+}
+
+.searchbar__category:hover .category__group{
+    display: block;
+    cursor: pointer !important;
+}
+
+.category-active{
+    cursor: pointer;
+}
+
+.category__group{
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 36px;
+    box-shadow: 0px 1px 3px #ccc;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 140px;
+    border-radius: 2px;
+    display: none;
+}
+
+.category__group li{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    width: 140px;
+}
+
+.category__group i{
+    display: none;
+    margin-top: 3px;
+}
+
+.actived__category i{
+    background-color: white;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.category__group li:hover{
+    cursor: pointer;
+    background-color: #dadada;
+    
+}
