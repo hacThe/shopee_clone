@@ -21,10 +21,8 @@ html{
     max-width: 100%;
     margin: 0 auto;
 }
-
-.grid__row{
-    display: flex;
-    flex-wrap: wrap;
+.grid__full-width{
+    width: 100%;
 }
 
 /* Animation */
@@ -67,12 +65,19 @@ html{
 .btn{
     background-color: white;
     border-radius: 2px;
-    border: 1px solid #ccc;
-    padding: 5px 20px;
-    min-width: 142px;
+    padding: 0px 20px;
+    min-width: 100px;
     height: 36px;
     cursor: pointer;
+    text-align: center;
+    font-weight: 500;
+    line-height: 36px;
+
     
+}
+
+.btn+.btn{
+    margin-left: 8px;
 }
 
 .btn.btn--primary{
@@ -80,6 +85,9 @@ html{
     color: white;
 }
 
+.btn--primary{
+    min-width: 120px;
+}
 .margin-right{
     margin-right: 12px !important;
     font-weight: 400;
@@ -87,4 +95,9 @@ html{
 
 .primary-text-color{
     color:#f53e2d !important;
+}
+
+
+.hided_item{
+    display: none !important;
 }

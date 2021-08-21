@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -128,7 +129,14 @@
                         </svg>
                     </div>
                     <div class="searchbar__searchbox">
-                        <input type="text" class="searchbox__input" placeholder="Mua gì cũng được tặng người yêu">
+                        <div class="searchbox__input-wrap">
+                            <input type="text" class="searchbox__input" placeholder="Mua gì cũng được tặng người yêu">
+                            <ul class="history__tag">
+                                <li class="history_header">Lịch sử tìm kiếm</li>
+                                <li class="history_content">Một ngày em sẽ nhớ giây phút này</li>
+                                <li class="history_content">Khi nắng trôi trên vòm cây, anh có em trong vòng tay</li>
+                            </ul>
+                        </div>
                         <div class="searchbar__category">
                             <span class="category-active">Trong shop </span>
                             <i class="fas fa-angle-down"></i>
@@ -150,7 +158,90 @@
                         </div>
                     </div>
                     <div class="searchbar__cart">
-                        <i class="fas fa-shopping-cart"></i>
+                        <div class="searchbar_cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <div class="empty_cart hided_item">
+                                <img src="assets/images/no_cart.png" alt="no item here">
+                                <p>Không có sản phẩm</p>
+                            </div>
+                            <div class="not_empty_cart">
+                                <span class="my_cart">Sản phẩm đã thêm</span>
+                                <ul class="items_list">
+                                    <li class="item_tile">
+                                        <img src="https://cf.shopee.vn/file/31cdc088e6c6e2b6204e198e6e4670b7_tn" alt="" class="item-img">
+                                        <div class="item_info">
+                                            <div class="item_discription">
+                                                <h5 class="item_discription-name">Kem đánh răng hữu cơ Ecodenda</h5>
+                                                <div class="item_discription-price">
+                                                    <span class="price__amount">1.000.050đ</span>
+                                                    <span class="multiply-symbol">x</span>
+                                                    <span class="item-quantity">3</span>
+                                                </div>
+                                            </div>
+                                            <div class="item_feature">
+                                                <span class="item_feature-type">Phân loại hàng: Bạc</span>
+                                                <span class="item_feature-delete">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item_tile">
+                                        <img src="https://cf.shopee.vn/file/31cdc088e6c6e2b6204e198e6e4670b7_tn" alt="" class="item-img">
+                                        <div class="item_info">
+                                            <div class="item_discription">
+                                                <h5 class="item_discription-name">Kem đánh răng hữu cơ Ecodenda</h5>
+                                                <div class="item_discription-price">
+                                                    <span class="price__amount">1.000.050đ</span>
+                                                    <span class="multiply-symbol">x</span>
+                                                    <span class="item-quantity">3</span>
+                                                </div>
+                                            </div>
+                                            <div class="item_feature">
+                                                <span class="item_feature-type">Phân loại hàng: Bạc</span>
+                                                <span class="item_feature-delete">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item_tile">
+                                        <img src="https://cf.shopee.vn/file/31cdc088e6c6e2b6204e198e6e4670b7_tn" alt="" class="item-img">
+                                        <div class="item_info">
+                                            <div class="item_discription">
+                                                <h5 class="item_discription-name">Kem đánh răng hữu cơ Ecodenda</h5>
+                                                <div class="item_discription-price">
+                                                    <span class="price__amount">1.000.050đ</span>
+                                                    <span class="multiply-symbol">x</span>
+                                                    <span class="item-quantity">3</span>
+                                                </div>
+                                            </div>
+                                            <div class="item_feature">
+                                                <span class="item_feature-type">Phân loại hàng: Bạc</span>
+                                                <span class="item_feature-delete">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item_tile">
+                                        <img src="https://cf.shopee.vn/file/31cdc088e6c6e2b6204e198e6e4670b7_tn" alt="" class="item-img">
+                                        <div class="item_info">
+                                            <div class="item_discription">
+                                                <h5 class="item_discription-name">Kem đánh răng hữu cơ Ecodenda</h5>
+                                                <div class="item_discription-price">
+                                                    <span class="price__amount">1.000.050đ</span>
+                                                    <span class="multiply-symbol">x</span>
+                                                    <span class="item-quantity">3</span>
+                                                </div>
+                                            </div>
+                                            <div class="item_feature">
+                                                <span class="item_feature-type">Phân loại hàng: Bạc</span>
+                                                <span class="item_feature-delete">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="cart_footer">
+                                    <a href="" class="watch_cart-btn">Xem giỏ hàng</a>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -158,11 +249,728 @@
         </header>
 
         <div class="container">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-2 m-0 c-0">
+                        <nav class="category_pc">
+                            <h3 class="category__heading">Danh mục</h3>
+                            <ul class="category-list">
+                                <li class="category-item ">
+                                    <a href="#" class="category-item-link actived__category_product">
+                                        Trang sức
+                                    </a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item-link">
+                                        Mỹ phẩm
+                                    </a>
+                                </li><li class="category-item">
+                                    <a href="#" class="category-item-link">
+                                        Phụ kiện
+                                    </a>
+                                </li>
+                                   
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col l-10 m-12 c12">
+                            <div class="sort-nav_product">
+                                <div class="sort-by-navbar">
+
+                                    <span class="sort-type">Sắp xếp theo</span>
+                                    <div class="btn btn--primary">Phổ biến</div>
+                                    <div class="btn">Mới nhất</div>
+                                    <div class="btn">Bán chạy</div>
+                                    <div class="sort-by-price">
+                                        <span>Giá</span>
+                                        <span class="sort-price-icon">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </span>
+                                        <ul class="sort-price-list">
+                                            <li class="sort-price-item">
+                                                Cao đến thấp
+                                            </li>
+                                            <li class="sort-price-item">
+                                                Thấp đến cao
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="page-nav-bar">
+
+                                    <div class="product-page-number">
+                                        <span class="current-page">1</span>/9
+                                    </div>
+    
+                                    <div class="navigate-page-bar">
+                                        <div class="navigate-page-button  previous-page">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </div>
+    
+                                        <div class="navigate-page-button  next-page">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </div>
+                                </div>
+
+                                </div>
+                           
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col l-2-4 margin-bottom" style="margin-bottom: 24px;">
+                                <div class="product-tile">
+
+                                    <img width="100%" src="https://cf.shopee.vn/file/dccd6a8654165fa5373b89394b1bac0d_tn" alt="san pham">
+                                    <div class="product-info">
+                                        <p class="product-name">
+                                            Áo sơ mi đuôi đỏ đỏ lè lẹt về làm trời làm đất làm nọ
+                                        </p>
+    
+                                        <div class="product-price">
+                                            <div class="old-price-div">
+                                                
+                                                <span class="old-product-price">
+                                                    150.000đ
+                                                </span>
+                                            </div>
+                                            <div class="current-price-div">
+
+                                                <span class="current-product-price">
+                                                    100.000đ
+                                                </span>
+                                            </div>
+                                        </div>
+        
+                                        <div class="status-product">
+                                            <div class="love-checkbox">
+                                                <input type="checkbox" id="love-this-product" class="love-check-box">
+                                                <label for="love-this-product" class=" loved-icon">
+                                                    <i class="fas fa-heart"></i>        
+                                                </label>
+                                                <label for="love-this-product" class="no-love-icon">
+                                                    <i class="far fa-heart"></i>      
+                                                </label>
+                                                
+                                            </div>
+                                                <div class="vote-rate">
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                </div>
+                                                <span class="sale-quantity">
+                                                    Đã bán: 92
+                                                </span>
+                                        </div>
+        
+                                        <div class="product-shop-place">
+                                            TP. Hồ Chí Minh
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="col l-2-4 margin-bottom" style="margin-bottom: 24px;">
+                                <div class="product-tile">
+
+                                    <img width="100%" src="https://cf.shopee.vn/file/dccd6a8654165fa5373b89394b1bac0d_tn" alt="san pham">
+                                    <div class="product-info">
+                                        <p class="product-name">
+                                            Áo sơ mi đuôi đỏ đỏ lè lẹt về làm trời làm đất làm nọ
+                                        </p>
+    
+                                        <div class="product-price">
+                                            <div class="old-price-div">
+                                                
+                                                <span class="old-product-price">
+                                                    150.000đ
+                                                </span>
+                                            </div>
+                                            <div class="current-price-div">
+
+                                                <span class="current-product-price">
+                                                    100.000đ
+                                                </span>
+                                            </div>
+                                        </div>
+        
+                                        <div class="status-product">
+                                            <div class="love-checkbox">
+                                                <input type="checkbox" id="love-this-product" class="love-check-box">
+                                                <label for="love-this-product" class=" loved-icon">
+                                                    <i class="fas fa-heart"></i>        
+                                                </label>
+                                                <label for="love-this-product" class="no-love-icon">
+                                                    <i class="far fa-heart"></i>      
+                                                </label>
+                                                
+                                            </div>
+                                                <div class="vote-rate">
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                </div>
+                                                <span class="sale-quantity">
+                                                    Đã bán: 92
+                                                </span>
+                                        </div>
+        
+                                        <div class="product-shop-place">
+                                            TP. Hồ Chí Minh
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="col l-2-4 margin-bottom" style="margin-bottom: 24px;">
+                                <div class="product-tile">
+
+                                    <img width="100%" src="https://cf.shopee.vn/file/dccd6a8654165fa5373b89394b1bac0d_tn" alt="san pham">
+                                    <div class="product-info">
+                                        <p class="product-name">
+                                            Áo sơ mi đuôi đỏ đỏ lè lẹt về làm trời làm đất làm nọ
+                                        </p>
+    
+                                        <div class="product-price">
+                                            <div class="old-price-div">
+                                                
+                                                <span class="old-product-price">
+                                                    150.000đ
+                                                </span>
+                                            </div>
+                                            <div class="current-price-div">
+
+                                                <span class="current-product-price">
+                                                    100.000đ
+                                                </span>
+                                            </div>
+                                        </div>
+        
+                                        <div class="status-product">
+                                            <div class="love-checkbox">
+                                                <input type="checkbox" id="love-this-product" class="love-check-box">
+                                                <label for="love-this-product" class=" loved-icon">
+                                                    <i class="fas fa-heart"></i>        
+                                                </label>
+                                                <label for="love-this-product" class="no-love-icon">
+                                                    <i class="far fa-heart"></i>      
+                                                </label>
+                                                
+                                            </div>
+                                                <div class="vote-rate">
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                </div>
+                                                <span class="sale-quantity">
+                                                    Đã bán: 92
+                                                </span>
+                                        </div>
+        
+                                        <div class="product-shop-place">
+                                            TP. Hồ Chí Minh
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="col l-2-4 margin-bottom" style="margin-bottom: 24px;">
+                                <div class="product-tile">
+
+                                    <img width="100%" src="https://cf.shopee.vn/file/dccd6a8654165fa5373b89394b1bac0d_tn" alt="san pham">
+                                    <div class="product-info">
+                                        <p class="product-name">
+                                            Áo sơ mi đuôi đỏ đỏ lè lẹt về làm trời làm đất làm nọ
+                                        </p>
+    
+                                        <div class="product-price">
+                                            <div class="old-price-div">
+                                                
+                                                <span class="old-product-price">
+                                                    150.000đ
+                                                </span>
+                                            </div>
+                                            <div class="current-price-div">
+
+                                                <span class="current-product-price">
+                                                    100.000đ
+                                                </span>
+                                            </div>
+                                        </div>
+        
+                                        <div class="status-product">
+                                            <div class="love-checkbox">
+                                                <input type="checkbox" id="love-this-product" class="love-check-box">
+                                                <label for="love-this-product" class=" loved-icon">
+                                                    <i class="fas fa-heart"></i>        
+                                                </label>
+                                                <label for="love-this-product" class="no-love-icon">
+                                                    <i class="far fa-heart"></i>      
+                                                </label>
+                                                
+                                            </div>
+                                                <div class="vote-rate">
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                </div>
+                                                <span class="sale-quantity">
+                                                    Đã bán: 92
+                                                </span>
+                                        </div>
+        
+                                        <div class="product-shop-place">
+                                            TP. Hồ Chí Minh
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="col l-2-4 margin-bottom" style="margin-bottom: 24px;">
+                                <div class="product-tile">
+
+                                    <img width="100%" src="https://cf.shopee.vn/file/dccd6a8654165fa5373b89394b1bac0d_tn" alt="san pham">
+                                    <div class="product-info">
+                                        <p class="product-name">
+                                            Áo sơ mi đuôi đỏ đỏ lè lẹt về làm trời làm đất làm nọ
+                                        </p>
+    
+                                        <div class="product-price">
+                                            <div class="old-price-div">
+                                                
+                                                <span class="old-product-price">
+                                                    150.000đ
+                                                </span>
+                                            </div>
+                                            <div class="current-price-div">
+
+                                                <span class="current-product-price">
+                                                    100.000đ
+                                                </span>
+                                            </div>
+                                        </div>
+        
+                                        <div class="status-product">
+                                            <div class="love-checkbox">
+                                                <input type="checkbox" id="love-this-product" class="love-check-box">
+                                                <label for="love-this-product" class=" loved-icon">
+                                                    <i class="fas fa-heart"></i>        
+                                                </label>
+                                                <label for="love-this-product" class="no-love-icon">
+                                                    <i class="far fa-heart"></i>      
+                                                </label>
+                                                
+                                            </div>
+                                                <div class="vote-rate">
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                </div>
+                                                <span class="sale-quantity">
+                                                    Đã bán: 92
+                                                </span>
+                                        </div>
+        
+                                        <div class="product-shop-place">
+                                            TP. Hồ Chí Minh
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="col l-2-4 margin-bottom" style="margin-bottom: 24px;">
+                                <div class="product-tile">
+
+                                    <img width="100%" src="https://cf.shopee.vn/file/dccd6a8654165fa5373b89394b1bac0d_tn" alt="san pham">
+                                    <div class="product-info">
+                                        <p class="product-name">
+                                            Áo sơ mi đuôi đỏ đỏ lè lẹt về làm trời làm đất làm nọ
+                                        </p>
+    
+                                        <div class="product-price">
+                                            <div class="old-price-div">
+                                                
+                                                <span class="old-product-price">
+                                                    150.000đ
+                                                </span>
+                                            </div>
+                                            <div class="current-price-div">
+
+                                                <span class="current-product-price">
+                                                    100.000đ
+                                                </span>
+                                            </div>
+                                        </div>
+        
+                                        <div class="status-product">
+                                            <div class="love-checkbox">
+                                                <input type="checkbox" id="love-this-product" class="love-check-box">
+                                                <label for="love-this-product" class=" loved-icon">
+                                                    <i class="fas fa-heart"></i>        
+                                                </label>
+                                                <label for="love-this-product" class="no-love-icon">
+                                                    <i class="far fa-heart"></i>      
+                                                </label>
+                                                
+                                            </div>
+                                                <div class="vote-rate">
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                </div>
+                                                <span class="sale-quantity">
+                                                    Đã bán: 92
+                                                </span>
+                                        </div>
+        
+                                        <div class="product-shop-place">
+                                            TP. Hồ Chí Minh
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="col l-2-4 margin-bottom" style="margin-bottom: 24px;">
+                                <div class="product-tile">
+
+                                    <img width="100%" src="https://cf.shopee.vn/file/dccd6a8654165fa5373b89394b1bac0d_tn" alt="san pham">
+                                    <div class="product-info">
+                                        <p class="product-name">
+                                            Áo sơ mi đuôi đỏ đỏ lè lẹt về làm trời làm đất làm nọ
+                                        </p>
+    
+                                        <div class="product-price">
+                                            <div class="old-price-div">
+                                                
+                                                <span class="old-product-price">
+                                                    150.000đ
+                                                </span>
+                                            </div>
+                                            <div class="current-price-div">
+
+                                                <span class="current-product-price">
+                                                    100.000đ
+                                                </span>
+                                            </div>
+                                        </div>
+        
+                                        <div class="status-product">
+                                            <div class="love-checkbox">
+                                                <input type="checkbox" id="love-this-product" class="love-check-box">
+                                                <label for="love-this-product" class=" loved-icon">
+                                                    <i class="fas fa-heart"></i>        
+                                                </label>
+                                                <label for="love-this-product" class="no-love-icon">
+                                                    <i class="far fa-heart"></i>      
+                                                </label>
+                                                
+                                            </div>
+                                                <div class="vote-rate">
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                </div>
+                                                <span class="sale-quantity">
+                                                    Đã bán: 92
+                                                </span>
+                                        </div>
+        
+                                        <div class="product-shop-place">
+                                            TP. Hồ Chí Minh
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="col l-2-4 margin-bottom" style="margin-bottom: 24px;">
+                                <div class="product-tile">
+
+                                    <img width="100%" src="https://cf.shopee.vn/file/dccd6a8654165fa5373b89394b1bac0d_tn" alt="san pham">
+                                    <div class="product-info">
+                                        <p class="product-name">
+                                            Áo sơ mi đuôi đỏ đỏ lè lẹt về làm trời làm đất làm nọ
+                                        </p>
+    
+                                        <div class="product-price">
+                                            <div class="old-price-div">
+                                                
+                                                <span class="old-product-price">
+                                                    150.000đ
+                                                </span>
+                                            </div>
+                                            <div class="current-price-div">
+
+                                                <span class="current-product-price">
+                                                    100.000đ
+                                                </span>
+                                            </div>
+                                        </div>
+        
+                                        <div class="status-product">
+                                            <div class="love-checkbox">
+                                                <input type="checkbox" id="love-this-product" class="love-check-box">
+                                                <label for="love-this-product" class=" loved-icon">
+                                                    <i class="fas fa-heart"></i>        
+                                                </label>
+                                                <label for="love-this-product" class="no-love-icon">
+                                                    <i class="far fa-heart"></i>      
+                                                </label>
+                                                
+                                            </div>
+                                                <div class="vote-rate">
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                </div>
+                                                <span class="sale-quantity">
+                                                    Đã bán: 92
+                                                </span>
+                                        </div>
+        
+                                        <div class="product-shop-place">
+                                            TP. Hồ Chí Minh
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="col l-2-4 margin-bottom" style="margin-bottom: 24px;">
+                                <div class="product-tile">
+
+                                    <img width="100%" src="https://cf.shopee.vn/file/dccd6a8654165fa5373b89394b1bac0d_tn" alt="san pham">
+                                    <div class="product-info">
+                                        <p class="product-name">
+                                            Áo sơ mi đuôi đỏ đỏ lè lẹt về làm trời làm đất làm nọ
+                                        </p>
+    
+                                        <div class="product-price">
+                                            <div class="old-price-div">
+                                                
+                                                <span class="old-product-price">
+                                                    150.000đ
+                                                </span>
+                                            </div>
+                                            <div class="current-price-div">
+
+                                                <span class="current-product-price">
+                                                    100.000đ
+                                                </span>
+                                            </div>
+                                        </div>
+        
+                                        <div class="status-product">
+                                            <div class="love-checkbox">
+                                                <input type="checkbox" id="love-this-product" class="love-check-box">
+                                                <label for="love-this-product" class=" loved-icon">
+                                                    <i class="fas fa-heart"></i>        
+                                                </label>
+                                                <label for="love-this-product" class="no-love-icon">
+                                                    <i class="far fa-heart"></i>      
+                                                </label>
+                                                
+                                            </div>
+                                                <div class="vote-rate">
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                </div>
+                                                <span class="sale-quantity">
+                                                    Đã bán: 92
+                                                </span>
+                                        </div>
+        
+                                        <div class="product-shop-place">
+                                            TP. Hồ Chí Minh
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="col l-2-4 margin-bottom" style="margin-bottom: 24px;">
+                                <div class="product-tile">
+
+                                    <img width="100%" src="https://cf.shopee.vn/file/dccd6a8654165fa5373b89394b1bac0d_tn" alt="san pham">
+                                    <div class="product-info">
+                                        <p class="product-name">
+                                            Áo sơ mi đuôi đỏ đỏ lè lẹt về làm trời làm đất làm nọ
+                                        </p>
+    
+                                        <div class="product-price">
+                                            <div class="old-price-div">
+                                                
+                                                <span class="old-product-price">
+                                                    150.000đ
+                                                </span>
+                                            </div>
+                                            <div class="current-price-div">
+
+                                                <span class="current-product-price">
+                                                    100.000đ
+                                                </span>
+                                            </div>
+                                        </div>
+        
+                                        <div class="status-product">
+                                            <div class="love-checkbox">
+                                                <input type="checkbox" id="love-this-product" class="love-check-box">
+                                                <label for="love-this-product" class=" loved-icon">
+                                                    <i class="fas fa-heart"></i>        
+                                                </label>
+                                                <label for="love-this-product" class="no-love-icon">
+                                                    <i class="far fa-heart"></i>      
+                                                </label>
+                                                
+                                            </div>
+                                                <div class="vote-rate">
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                    <i class="fas fa-star yellow-star"></i>
+                                                </div>
+                                                <span class="sale-quantity">
+                                                    Đã bán: 92
+                                                </span>
+                                        </div>
+        
+                                        <div class="product-shop-place">
+                                            TP. Hồ Chí Minh
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                           
+                        </div>
+
+                        <div class="page-controller">
+                            <div class="previous-page">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                            <div class="product-pages current-page-btn">1</div>
+                            <div class="product-pages">2</div>
+                            <div class="product-pages">3</div>
+                            <div class="product-pages">4</div>
+                            <div class="product-pages">5</div>
+                            <div class="product-pages-etc">...</div>
+
+                            <div class="next-page">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="divider-footer">
 
         </div>
-
         <footer class="footer">
+<div class="grid wide">
+    <div class="row footer-row">
+        <div class="col l-3 m-4 c-6">
+            <ul class="option-title-footer cskh">
+                <span class="title-footer">Chăm sóc khách hàng</span>
+                <li class="cskh-item">Trung tâm trợ giúp</li>
+                <li class="cskh-item">Shopee Blog</li>
+                <li class="cskh-item">Shopee Mall</li>
+                <li class="cskh-item">Hướng dẫn mua hàng</li>
+                <li class="cskh-item">Hướng dẫn bán hàng</li>
+                <li class="cskh-item">Thanh toán</li>
+                <li class="cskh-item">Shopee xu</li>
+                <li class="cskh-item">Vận chuyển</li>
+                <li class="cskh-item">Trả hàng & Hoàn tiền</li>
+                <li class="cskh-item">Chăm sóc khách hàng</li>
+                <li class="cskh-item">Chính sách bảo hành</li>
 
+
+            </ul>
+        </div>
+
+        <div class="col l-3 m-4 c-6">
+            <ul class="option-title-footer about-shopee">
+                <span class="title-footer">Về Shopee</span>
+
+                <li class="about-shopee-item">Giới thiệu về Shopee Việt Nam</li>
+                <li class="about-shopee-item">Tuyển dụng</li>
+                <li class="about-shopee-item">Điều khoản Shopee</li>
+                <li class="about-shopee-item">Chính sách bảo mật</li>
+                <li class="about-shopee-item">Chính hãng</li>
+                <li class="about-shopee-item">Kênh người bán</li>
+                <li class="about-shopee-item">Flash sales</li>
+                <li class="about-shopee-item">Chương trình Tiếp Thị Liên Kết Shopee</li>
+                <li class="about-shopee-item">Liên hệ truyền thông</li>
+
+
+            </ul>
+        </div>
+
+
+        <div class="col l-3 m-4 c-6">
+            <ul class="option-title-footer follow-us">
+                <span class="title-footer">Theo dõi chúng tôi trên</span>
+
+                <li class="follow-us-item"><i class="fab fa-facebook facebook-icon-footer"></i> Facebook</li>
+                <li class="follow-us-item"><i class="fab fa-instagram-square instagram-icon-footer"></i> Instagram</li>
+                <li class="follow-us-item"><i class="fab fa-linkedin linkedin-icon-footer"></i> LinkedIn</li>
+
+            </ul>
+        </div>
+
+        <div class="col l-3 m-4 c-6">
+            <span class="title-footer dowload-app-label">Tải ứng dụng shopee ngay thôi</span>
+            <div class="row">
+                <div class="col l-5 m-5 c-5">
+                    <img width="100%" src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg//assets/d91264e165ed6facc6178994d5afae79.png" alt="qr-code" class="qr-code-footer-img">
+                </div>
+                <div class="div-link-store">
+                    <div class="div app-store-div">
+                        <img width="70%" src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg//assets/39f189e19764dab688d3850742f13718.png" alt="App Store" class="app-store-img">
+                    </div>
+                    <div class="google-play-div">
+                        <img width="70%" src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg//assets/f4f5426ce757aea491dce94201560583.png" alt="Google Store" class="google-store-img">
+                    </div>
+                    <div class="app-gallery-div">
+                        <img width="70%" src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg//assets/1ae215920a31f2fc75b00d4ee9ae8551.png" alt="App Gallery" class="app-gallery-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="lisence">
+    <span>© 2021 Dương Hiển Thế first front-end project</span>
+</div>
         </footer>
     </div>
 
